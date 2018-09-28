@@ -1,6 +1,6 @@
 {
   "name": "ozytis-typescript-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "utils typescript",
   "main": "index.ts",
   "scripts": {
@@ -20,7 +20,5 @@
     "url": "https://github.com/Ozytis/typescript-utils/issues"
   },
   "homepage": "https://github.com/Ozytis/typescript-utils#readme",
-  "dependencies": {
-    "tsc": "^1.20150623.0"
-  }
+  "dependencies": {}
 }
