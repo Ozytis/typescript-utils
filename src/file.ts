@@ -26,4 +26,20 @@ export class FileUtils
         var blob = new Blob(byteArrays, { type: contentType });
         return blob;
     }
+
+    public static readBlobFileToBase64(blobFile : Blob) : Promise<any>{
+        var temporaryFileReader = new FileReader();
+
+        return new Promise((resolve, reject) => {
+          temporaryFileReader.onerror = () => {
+            temporaryFileReader.abort();
+            reject(new DOMException("Problem parsing input file."));
+          };
+      
+          temporaryFileReader.onload = () => {
+            resolve(temporaryFileReader.result);
+          };
+          temporaryFileReader.readAsDataURL(blobFile);
+        });
+    }
 }
