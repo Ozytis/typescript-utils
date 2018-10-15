@@ -1,6 +1,6 @@
 {
   "name": "ozytis-typescript-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "utils typescript",
   "main": "index.ts",
   "scripts": {
