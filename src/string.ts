@@ -41,7 +41,6 @@ export class StringUtils{
         if(str == null){
             return null;
         }
-        str.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-        return str;
+        return str.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
     }
 }
